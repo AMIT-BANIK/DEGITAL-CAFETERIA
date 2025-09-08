@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Cafeteria</title>
+  <link rel="stylesheet" href="DC.css" />
+</head>
+<body>
+
+  <header>SUST Digital Cafeteria</header>
+
+ 
+  <div class="nav-bar">
+  <label for="tab-authority" class="tab-btn">Authority Login</label> 
+  <label for="tab-staff" class="tab-btn">Staff Login</label>
+  </div>
+
+ 
+  <input type="radio" id="tab-welcome" name="tab" checked>
+  <input type="radio" id="tab-order" name="tab">
+  <input type="radio" id="tab-paid" name="tab">
+  <input type="radio" id="tab-authority" name="tab">
+  <input type="radio" id="tab-staff" name="tab">
+
+  
+  <div class="container tab-content" id="welcome-panel">
+    <h2 class="panel-title">Welcome to SUST Digital Cafeteria</h2>
+    <div class="info-box">
+      <h3>Available Food Menu</h3>
+      <ul>
+        <li>Paratha — Tk10.00 </li>
+        <li>Egg — Tk15.00</li>
+        <li>Rice — Tk20.00</li>
+        <li>Chicken — Tk40.00</li>
+        <li>Fish curry — Taka 55.00</li>
+      </ul>
+    </div>
+    <p>If you want to order, please click below:</p>
+    <label for="tab-order" class="btn">Order Now</label>
+  </div>
+
+  <div class="container tab-content" id="order-panel">
+  <h2 class="panel-title">Place Your Order</h2>
+  <label for="reg-number">Registration Number:</label>
+  <input type="text" id="reg-number" placeholder="e.g., 2022831005" />
+  <label for="food-select">Select Food Item:</label>
+  <select id="food-select">
+    <option>Paratha - Tk10.00</option>
+    <option>Egg - Tk15.00</option>
+    <option>Rice — Tk20.00</option>
+    <option>Chicken — Tk40.00</option>
+    <option>Fish curry — Taka 55.00</option>
+  </select>
+
+ 
+  <div class="order-summary">
+    <h3>Order Summary</h3>
+    <p>Item: <strong>Selected food item</strong></p>
+    <p> Registration Number: <strong>2022831005</strong></p>
+    <p>Total Cost: <strong>TkXX.XX</strong></p>
+  </div>
+
+  <label for="tab-paid" class="btn">Place Order</label>
+  </div>
+
+  <div class="container tab-content" id="paid-panel">
+  <h2 class="panel-title">Payment Successful</h2>
+
+  <div class="order-summary">
+    <h3>Order Details</h3>
+    <p>Item: <strong>Selected food item</strong></p>
+    <p>Registration Number: <strong>2022831005</strong></p>
+    <p>Total Paid: <strong>TkXX.XX</strong></p>
+    <p>Order Code: <strong>#103</strong></p>
+    <p class="notice">Please collect your food from the counter.</p>
+  </div>
+
+  <label for="tab-welcome" class="btn">Back to HomePage</label>
+  </div>
+    <div class="container tab-content" id="authority-panel">
+      <h2 class="panel-title">Cafeteria Authority Panel</h2>
+        <div class="section">
+          <h3>Manage Menu</h3>
+      <table>
+        <tr><th>Item</th><th>Price</th><th>Actions</th></tr>
+        <tr><td>Paratha</td><td>Tk10.00</td><td><a href="#" class="btn">Edit</a><a href="#" class="btn">Delete</a></td></tr>
+        <tr><td>Rice</td><td>Tk20.00</td><td><a href="#" class="btn">Edit</a><a href="#" class="btn">Delete</a></td></tr>
+        <tr><td>Egg</td><td>Tk15.00</td><td><a href="#" class="btn">Edit</a><a href="#" class="btn">Delete</a></td></tr>
+      </table>
+      <a href="#" class="btn">Add New Item</a>
+    </div>
+
+    <div class="section">
+       <a href="#" class="btn">User Details</a>
+    </div>
+
+    <div class="section">
+        <a href="#" class="btn">Staff Details</a>
+    </div>
+    
+    <div class="section">
+      <h3>Sales Report</h3>
+      <div class="info-box">
+        <p><strong>Today’s Sales:</strong> $72.00</p>
+        <p><strong>Monthly Sales:</strong> $1,340.00</p>
+        <a class="btn" href="#"> View Full Report</a>
+      </div>
+        </div>
+    <div class="section">
+      <label for="tab-welcome" class="btn">Back to Home</label>
+    </div>
+  </div>
+
+  <div class="container tab-content" id="staff-panel">
+    <h2 class="panel-title">Cafeteria Staff Panel</h2>
+    <div class="section">
+      <h3>Current Orders to Serve</h3>
+      <table>
+        <tr><th>Order ID</th><th>Items</th><th>Total</th><th>Action</th></tr>
+        <tr><td>#103</td><td>Fish curry, Rice</td><td>Tk75.00</td><td><a href="#" class="btn">Mark as Served</a></td></tr>
+        <tr><td>#104</td><td>Chicken, Paratha</td><td>Tk50.00</td><td><a href="#" class="btn">Mark as Served</a></td></tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h3>Manage Menu</h3>
+      <table>
+        <tr><th>Item</th><th>Price</th><th>Actions</th></tr>
+        <tr><td>Paratha</td><td>Tk10.00</td><td><a href="#" class="btn">Delete</a></td></tr>
+        <tr><td>Rice</td><td>Tk20.00</td><td></a><a href="#" class="btn">Delete</a></td></tr>
+        <tr><td>Egg</td><td>Tk15.00</td><td><a href="#" class="btn">Delete</a></td></tr>
+      </table>
+    </div>
+    
+    <div class="section">
+      <label for="tab-welcome" class="btn">Back to Home</label>
+    </div>
+  </div>
+
+</body>
+</html>
